@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj osobe</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'telebaza/style.css' %}" />
+</head>
+<body>
+<h1>Dodaj osobe:</h1>
+<h2><a href="{% url 'telebaza:printMsg' %}"> Powrot do strony glownej </a></h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <label>Imie: <input type="text" name="name" ></label><br/>
+    <label>Nazwisko: <input type="text" name="surname"/></label> <br/>
+    <label>Data urodzenia: <input type="text" name="BirthDate"/></label><br/>
+    <label>Numer telefonu: <input type="text" name="phone"/></label><br/>
+    <label>Email: <input type="text" name="email"/></label><br/><br/>
+    <input type="submit" value="{{ banners.banner }}  "/>
+
+</form>
+</body>
+</html>

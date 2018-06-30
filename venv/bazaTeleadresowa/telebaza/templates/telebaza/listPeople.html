@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'telebaza/style.css' %}" />
+</head>
+<body>
+<h1>Lista ludzi w bazie teleadresowej:</h1>
+<ul>
+    {% for p in people %}
+    <h2><li>Imie: {{p.name}}, Nazwisko: {{p.surname}}, data urodzenia: {{p.BirthDate}}, numer tel.: {{p.phone}}, email: {{p.email}} </li></h2><br>
+    {% endfor %}
+</ul>
+
+
+
+</body>
+</html>

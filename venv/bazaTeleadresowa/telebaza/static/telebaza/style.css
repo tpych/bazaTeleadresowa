@@ -1,0 +1,23 @@
+
+
+
+
+li a {
+    color: orange;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+p {
+  text-justify-trim: justify-all;
+}
+
+
+label { display: inline-block; width:20px; text-align: left; }
+
+body {
+    background: white url("images/tlo.jpeg") no-repeat;
+    background-size: cover;
+}

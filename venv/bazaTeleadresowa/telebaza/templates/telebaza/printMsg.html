@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona startowa</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'telebaza/style.css' %}" />
+</head>
+<body>
+<h1>Witaj na stronie bazy teleadresowej</h1>
+
+<ul>
+    <h2><li><a href="{% url 'telebaza:addPerson' %}" > Dodaj nowa osobe do bazy </a></li></h2>
+    <h2><li><a href="{% url 'telebaza:listPeople' %}" > Zobacz osoby z bazy teleadresowej </a></li></h2><br/>
+</ul>
+
+</body>
+</html>
